@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: #0e0c0c;
+    --color2: #171717;
+    --color3: #a8a29e;
+    --color4: #f5f5f5;
+}
+
+
+hr { 
+    margin: 0px !important;
+    color: white !important;
+}
+
+.c-header {
+    background: linear-gradient(45deg, rgb(230, 6, 174), rgb(136, 32, 110), rgb(164, 19, 128), rgb(213, 14, 164));
+    animation: colors 15s ease infinite;
+    background-size: 300% 300%;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.titulo {
+    color: white;
+    font-weight: 600;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: -3px;
+}
+
+.pet {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 120px;
+    justify-content: center;
+}
+
+.pet-rev {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 120px;
+    justify-content: center;
+}
+
+.pet-img {
+    width: 450px;
+    height: 400px;
+    border: 8px solid rgb(136, 32, 110);
+    border-radius: 50%;
+}
+
+.pet-content {
+    padding: 35px 35px;
+}
+
+.pet-tit {
+    font-size: 50px;
+    color: rgb(136, 32, 110);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.pet-desc {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    max-width: 500px;
+    color: #521343;
+}
+
+.button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: #521343; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 130px;
+    margin-top: 15px;
+  }
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #521343;
+  }
+
+.button1:hover {
+  background-color: #b3248a;
+  color: white;
+}
+
+.button-start {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: #521343; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom-right-radius: 20px;
+}
+
+.button3 {
+    border-bottom-left-radius: 20px;
+}
+
+footer {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    color: var(--color4);
+}
+
+#footer_content {
+    background: linear-gradient(45deg, rgb(230, 6, 174), rgb(136, 32, 110), rgb(164, 19, 128), rgb(213, 14, 164));
+    animation: colors 15s ease infinite;
+    /* background-color: var(--color2); */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color4);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--color3);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--color1);
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #7f37c9;
+    border: none;
+    color: var(--color4);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8s;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(240, 170, 220);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 200;
+    color: var(--color1);
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 768px){
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px){
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+
+.footer-logo {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    border: 3px solid rgb(136, 32, 110);
+    margin-bottom: 0.75rem;
+}
+
+.centered {
+    margin: 0 auto !important;
+    float: none !important;
+    gap: 45px !important;
+}
+
+.slider {
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.slider > .slider-content {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    transition: all 500ms ease;
+    text-align: center;
+}
+
+.slider > .slider-content > .slider-item {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.slider > input:nth-child(1):checked ~ .slider-content {
+    transform: translateX(0%);
+}
+
+.slider > input:nth-child(2):checked ~ .slider-content {
+    transform: translateX(-100%);
+}
+
+.slider > input:nth-child(3):checked ~ .slider-content {
+    transform: translateX(-200%);
+}
+
+.slider > input:nth-child(4):checked ~ .slider-content {
+    transform: translateX(-300%);
+}

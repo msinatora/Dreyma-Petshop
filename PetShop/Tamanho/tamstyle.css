@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+}
+
+.pet-vetor {
+    /* position: relative; */
+    /* margin-left: 8%; */
+    width: 285px;
+}
+
+.petmed-tit {
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.medicoes-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
